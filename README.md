@@ -1,4 +1,4 @@
-Config2Csv
+Ini2Csv
 ==========
 
 A simple way to convert ini files to csv in Python (and the other way : csv to ini files). Python >=3.3

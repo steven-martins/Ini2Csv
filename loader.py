@@ -34,7 +34,10 @@ import os
 class Conf:
     def __init__(self, filename):
         self._filename = filename
-        self._config = ConfigParser(strict=False)
+        try:
+            self._config = ConfigParser(strict=False)
+        except:
+            self._config = ConfigParser()
         try:
             self._config.read(os.path.expanduser(filename))
         except Exception as e:
